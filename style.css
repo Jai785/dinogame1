@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#game {
+    height: 200px;
+    width: 450px;
+    border: 2px solid black;
+    margin: 3rem auto 0px auto;
+}
+
+#block {
+    height: 50px;
+    width: 35px;
+    background-color: blue;
+    position: relative;
+    top: 150px;
+    left: 415px;
+    /* animation: move 1s linear infinite; */
+}
+
+#character {
+    height: 80px;
+    width: 40px;
+    position: relative;
+    top: 77px;
+}
+
+#character img {
+    height: 70px;
+    width: 70px;
+}
+
+@keyframes move {
+    0% {
+        left: 465px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+#result {
+    height: 200px;
+    width: 400px;
+    background-color: cornflowerblue;
+    margin: 3rem auto;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    display: none;
+}
+
+#score {
+    font-size: 2.2rem;
+    color: brown;
+}
+
+#btn {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: cyan;
+    font-size: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#btn1 {
+    display: flex;
+    margin: 0px auto;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    width: 150px;
+    border-radius: 50px;
+    cursor: pointer;
+    top: 20px;
+    background-color: aquamarine;
+}
+
+#btn1:active {
+    background-color: rgb(53, 171, 132);
+}
+
+@media only screen and (max-width:770px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+
+        transform: rotate(90deg);
+        margin: auto;
+        padding: 15px 20px 75px 70px;
+    }
+
+    #btn1 {
+        margin: 0 150px;
+    }
+
+}
